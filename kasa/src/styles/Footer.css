@@ -1,0 +1,34 @@
+.lmj-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  margin-top: 50px;
+}
+.logo-footer {
+  max-width: 80%;
+}
+.footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .footer {
+    display: none;
+  }
+
+  .footer-mobile {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-mobile {
+    max-width: 80%;
+  }
+}

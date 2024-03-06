@@ -1,0 +1,91 @@
+.text-home {
+  position: relative;
+  width: 90%;
+  height: 223px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  background-color: grey;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+/* buttonStyles.css */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  gap: 25px;
+}
+
+.button-text {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.button-style {
+  background-color: #ff6060;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 72%;
+  margin-bottom: 1%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.button-message {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.button-style:hover .button-message {
+  opacity: 1;
+}
+
+.centered-justified {
+  text-align: justify;
+  margin: 30px;
+  background-color: #f6f6f673;
+}
+@media only screen and (max-width: 750px) {
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+  }
+  .button-wrapper {
+    margin: 10px 0 0 0;
+  }
+}

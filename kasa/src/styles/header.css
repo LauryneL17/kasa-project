@@ -1,0 +1,27 @@
+.navcontainer {
+  align-items: center; /* Ajout de l'alignement vertical au centre */
+  margin-bottom: 20px;
+  display: flex;
+
+  justify-content: space-between;
+  margin: 13px 5%;
+}
+
+.new-page a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  margin: 5px;
+}
+.new-page a:hover {
+  text-decoration: underline;
+}
+.new-page a:hover,
+.new-page a:active,
+.new-page a:focus {
+  text-decoration: underline;
+}
+
+.logo-kasa {
+  margin: 20px;
+}

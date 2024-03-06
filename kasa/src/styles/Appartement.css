@@ -1,0 +1,249 @@
+/* carrousel*/
+.button-banner {
+  width: 100%;
+  height: 430px;
+  border-radius: 25px;
+}
+
+.slider-container {
+  position: relative; /* Ajout de la position relative pour positionner l'indicateur de compteur d'image */
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.image-counter {
+  position: absolute;
+  bottom: 10px; /* Ajustez la position verticale selon vos préférences */
+  left: 50%; /* Déplacez-le horizontalement au centre */
+  transform: translateX(-50%); /* Pour le centrer précisément */
+  color: white;
+  font-size: 20px;
+}
+
+/* Styles pour les icônes à l'intérieur des boutons */
+.button-change i {
+  color: white; /* Couleur de l'icône en noir */
+  font-size: 50px;
+}
+.button-change {
+  position: absolute;
+  top: 50%; /* Positionner les boutons au milieu verticalement */
+  transform: translateY(-50%); /* Ajuster la position verticale */
+  background-color: transparent; /* Fond transparent */
+  border: none; /* Supprimer les bordures */
+}
+
+.button-change:first-child {
+  left: 0;
+}
+
+.button-change:last-child {
+  right: 0;
+}
+/* fin du carrousel*/
+
+/* titre / lieu / image /texte propio*/
+
+.container-x2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title-color {
+  color: #ff6060;
+  margin-bottom: 5px;
+}
+.sous-titre {
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.proprio-image {
+  border-radius: 100px;
+  width: 80px;
+}
+
+.proprio {
+  margin-top: 30px;
+  color: #ff6060;
+}
+.left-content {
+  flex: 1;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+}
+
+.right-content .proprio {
+  margin-right: 10px;
+}
+
+/*  fin titre / lieu / image /texte propio*/
+
+/*tag et button*/
+
+.global-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.top-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.stars {
+  display: flex;
+}
+
+.stars i {
+  color: #ff6060; /* couleur jaune pour les étoiles */
+  font-size: 20px; /* taille des étoiles */
+  margin-left: 5px; /* espacement entre les étoiles */
+}
+
+.style-button {
+  background-color: #ff6060;
+  color: white;
+  border-radius: 7px;
+  width: 100px;
+  height: 40px;
+  border: none;
+}
+
+.containe {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.containe-mobile {
+  display: none; /* Par défaut, le conteneur mobile est masqué */
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.equipment-column {
+  list-style-type: none;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 76px;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  height: 52px;
+
+  justify-content: space-between;
+}
+.description-column {
+  margin: 30px;
+}
+.texte {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Taille {
+  width: 75%;
+  background: #f6f6f673;
+}
+/* fin tag et bouton*/
+
+/* juste mobile*/
+
+@media only screen and (max-width: 750px) {
+  .button-banner {
+    height: 260px;
+  }
+
+  .containe {
+    display: none;
+  }
+
+  .containe-mobile {
+    display: block;
+  }
+  .containe-mobile {
+    width: 85%;
+    margin: 0 auto;
+
+    margin-bottom: 50px;
+  }
+  .title-color-mobile {
+    color: #ff6060;
+    margin-bottom: 5px;
+  }
+  .sous-titre-mobile {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 5px;
+  }
+  .global-buttons-mobile {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .style-button-mobile {
+    background-color: #ff6060;
+    color: white;
+    border-radius: 7px;
+    width: 100px;
+    height: 40px;
+    border: none;
+  }
+
+  .top-buttons-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .stars-mobile i {
+    color: #ff6060;
+    font-size: 15px;
+  }
+
+  .right-content-mobile {
+    display: flex;
+    align-items: center;
+    margin-right: -19%;
+    gap: 5px;
+  }
+
+  .proprio-image-mobile {
+    width: 30%;
+    border-radius: 50%;
+  }
+  .Taille {
+    width: 100%;
+    background: #f6f6f673;
+  }
+}

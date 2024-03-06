@@ -1,0 +1,21 @@
+.error-wrapper {
+  text-align: center;
+}
+
+.error-subtitle {
+  font-size: 24px;
+  color: #ff6060;
+}
+
+.error-title {
+  font-family: "Montserrat";
+  font-size: 150px;
+  color: #ff6060;
+}
+
+.changement-pages {
+  font-family: "Montserrat";
+  font-size: 18px;
+  text-align: center; /* Pour centrer le texte */
+  margin-bottom: 110px;
+}
