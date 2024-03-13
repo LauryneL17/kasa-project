@@ -20,8 +20,7 @@ ReactDOM.render(
         <Route path="/" element={<Home />} />
         <Route path="/logement/:id" element={<Logement />} />
         <Route path="/About" element={<About />} />
-        <Route path="/404" element={<Error />} /> {/* Route for 404 page */}
-        {/* Catch-all route for unknown paths */}
+        <Route path="/404" element={<Error />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />

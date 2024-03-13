@@ -1,22 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import img from "../assets/paysages.jpg";
 import "../styles/home.css";
 import Collapse from "../component/Collapse";
 
 function About() {
-  const [messagesVisibility, setMessagesVisibility] = useState({
-    fiabilite: false,
-    respect: false,
-    service: false,
-    securite: false,
-  });
-
-  const handleClick = (buttonName) => {
-    const newMessagesVisibility = { ...messagesVisibility };
-    newMessagesVisibility[buttonName] = !messagesVisibility[buttonName];
-    setMessagesVisibility(newMessagesVisibility);
-  };
-
   return (
     <div>
       <section
@@ -25,11 +12,7 @@ function About() {
         style={{ backgroundImage: `url(${img})` }}
       ></section>
       <div className="button-container">
-        <Collapse
-          defaultOpen={messagesVisibility.fiabilite}
-          buttonText="Fiabilité"
-          onClick={() => handleClick("fiabilite")}
-        >
+        <Collapse buttonText="Fiabilité">
           <p className="centered-justified">
             Les annonces postées sur Kasa garantissent une Fiabilité totale. Les
             photos sont conformes au logements, et toutes les informations sont
@@ -37,11 +20,7 @@ function About() {
           </p>
         </Collapse>
 
-        <Collapse
-          defaultOpen={messagesVisibility.respect}
-          buttonText="Respect"
-          onClick={() => handleClick("respect")}
-        >
+        <Collapse buttonText="Respect">
           <p className="centered-justified">
             La bienveillance fait partie des valeurs fondatrice de Kasa. Tout
             comportement discriminatoire ou de perturbation du voisinage
@@ -49,11 +28,7 @@ function About() {
           </p>
         </Collapse>
 
-        <Collapse
-          defaultOpen={messagesVisibility.service}
-          buttonText="Service"
-          onClick={() => handleClick("service")}
-        >
+        <Collapse buttonText="Service">
           <p className="centered-justified">
             La bienveillance fait partie des valeurs fondatrice de Kasa. Tout
             comportement discriminatoire ou de perturbation du voisinage
@@ -61,11 +36,7 @@ function About() {
           </p>
         </Collapse>
 
-        <Collapse
-          defaultOpen={messagesVisibility.securite}
-          buttonText="Sécurité"
-          onClick={() => handleClick("securite")}
-        >
+        <Collapse buttonText="Sécurité">
           <p className="centered-justified">
             La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
             pour les voyageurs, chaque logement correspond aux critères de

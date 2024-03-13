@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Error.css";
+import errorImage from "../assets/404.png";
 
 function Error() {
   return (
     <div className="error-wrapper">
-      <h1 className="error-title">404</h1>
+      <img src={errorImage} alt="404" className="error-image" />
       <p className="error-subtitle">
         Oups! La page que vous demandez n’existe pas.
       </p>

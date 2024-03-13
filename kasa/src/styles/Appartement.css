@@ -3,6 +3,7 @@
   width: 100%;
   height: 430px;
   border-radius: 25px;
+  object-fit: cover;
 }
 
 .slider-container {
@@ -61,11 +62,15 @@
 .title-color {
   color: #ff6060;
   margin-bottom: 5px;
+  font-family: monteserrat;
+  font-weight: normal;
+  font-size: 36px;
 }
 .sous-titre {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   margin-top: 5px;
+  font-family: montserrat;
 }
 
 .proprio-image {
@@ -119,10 +124,11 @@
 .style-button {
   background-color: #ff6060;
   color: white;
-  border-radius: 7px;
+  border-radius: 1px;
   width: 100px;
-  height: 40px;
+  height: 32px;
   border: none;
+  font-weight: bold;
 }
 
 .containe {
@@ -167,12 +173,20 @@
 .texte {
   font-weight: bold;
   font-size: 20px;
+  margin-left: 5px;
 }
 
 .Taille {
   width: 75%;
   background: #f6f6f673;
 }
+
+.arrow {
+  font-size: 30px;
+  margin-right: 10px;
+  font-weight: 300;
+}
+
 /* fin tag et bouton*/
 
 /* juste mobile*/
@@ -213,10 +227,11 @@
   .style-button-mobile {
     background-color: #ff6060;
     color: white;
-    border-radius: 7px;
+    border-radius: 1px;
     width: 100px;
-    height: 40px;
+    height: 32px;
     border: none;
+    font-weight: bold;
   }
 
   .top-buttons-mobile {

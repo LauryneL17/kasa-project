@@ -1,12 +1,12 @@
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 30px;
   border-radius: 15px;
-  background: #f6f6f673;
-  max-width: 1200px;
-
+  background: #52505012;
+  margin: 10 auto;
   justify-content: center;
+  width: 90%;
 }
 
 .card {
@@ -14,7 +14,7 @@
   height: 350px;
   margin: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 15px;
   overflow: hidden;
   position: relative;
 }
@@ -44,14 +44,27 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 60%;
   padding: 10px;
   font-weight: bold;
   color: white;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .card {
-    width: 301px;
     margin: 10px;
+  }
+  .card-container {
+    background-color: white;
+    margin: 5%;
+  }
+}
+@media screen and (min-width: 1374px) {
+  .card {
+    margin: 30px;
+  }
+}
+@media screen and (min-width: 1307px) {
+  .card {
+    margin: 20px;
   }
 }
